@@ -34,6 +34,31 @@
         tools:layout_editor_absoluteX="0dp"
         tools:listitem="@layout/card_design" />
 
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Hình tròn làm nền -->
+        <ImageView
+            android:id="@+id/circleBackground"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/circle_background" />
+
+        <!-- Biểu tượng bút nhỏ -->
+        <ImageView
+            android:id="@+id/sendButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pencil"
+            app:tint="@android:color/white" />
+    </FrameLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
